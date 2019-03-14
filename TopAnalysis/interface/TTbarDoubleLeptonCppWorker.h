@@ -23,7 +23,7 @@ public:
   void setMuons(TRAF pt, TRAF eta, TRAF phi, TRAF mass, TRAI charge,
                 TRAF relIso, TRAB isTight, TRAB isGlobal, TRAB isPFcand, TRAB isTracker);
   void setElectrons(TRAF pt, TRAF eta, TRAF phi, TRAF mass, TRAI charge,
-                    TRAF relIso, TRAI id, TRAI idTrig, TRAF dEtaSC);
+                    TRAF relIso, TRAI id, TRAI idTrig, TRAF dEtaSC, TRAF eCorr);
   void setJets(TRAF pt, TRAF eta, TRAF phi, TRAF mass,
                TRAI id, TRAF CSVv2);
   void setMET(TTreeReaderValue<float>* pt, TTreeReaderValue<float>* phi);
