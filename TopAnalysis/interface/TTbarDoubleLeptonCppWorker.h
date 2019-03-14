@@ -60,7 +60,7 @@ private:
   TRAF in_Electrons_p4[4];
   TRAI in_Electrons_charge = nullptr;
   TRAF in_Electrons_relIso = nullptr;
-  TRAI in_Electrons_id = nullptr, in_Electrons_idTrg = nullptr;
+  TRAI in_Electrons_id = nullptr;
   TRAF in_Electrons_dEtaSC = nullptr;
   //TRAF in_Electrons_eCorr = nullptr;
   TRAF in_Jets_p4[4];
