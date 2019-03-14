@@ -170,8 +170,7 @@ bool TTbarDoubleLeptonCppWorker::analyze() {
   int electron1Idx = -1, electron2Idx = -1;
   int nGoodElectrons = 0;
   for ( unsigned i=0, n=in_Electrons_p4[0]->GetSize(); i<n; ++i ) {
-    //const double pt = in_Electrons_p4[0]->At(i) * in_Electrons_eCorr->At(i);
-    const double pt = in_Electrons_p4[0]->At(i);
+    const double pt = in_Electrons_p4[0]->At(i) * in_Electrons_eCorr->At(i);
     if ( isGoodElectron(i) ) {
       ++nGoodElectrons;
       if ( electron2Idx < 0 or pt > in_Electrons_p4[0]->At(electron2Idx) * in_Electrons_eCorr->At(electron2Idx) ) electron2Idx = i;
